@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MEDIA</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box; 
+	}
+
+	div::after{
+		content:"big.screen";
+		height: 300px;
+		width: 300px;
+		background:black;
+		color: white;
+		display: block;
+	}
+	@media screen and (orientation: portrait){
+		body{
+			background:black;
+		}
+	}
+	@media screen and (min-width: 768px){
+		body{content: "screen > 768px"
+			background:blue;
+		}
+		body{
+			background:red;
+		}
+	}
+
+
+
+
+</style>
+
+</head>
+<body>
+	<div></div>
+</body>
+</html>
